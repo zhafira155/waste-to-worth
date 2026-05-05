@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:  #dde7e8;
+}
+
+/* === NAVBAR === */
+nav {
+  background-color: rgba(179, 200, 210, 0.872);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed; 
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV LIST di tengah */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-list li a:hover:after {
+  width: 100%;
+}
+
+/* Tombol signup kanan */
+.btn-signup {
+  text-decoration: none;
+  background-color: #003B42;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background-color: #006666;
+}
+
+.section-title  h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.section-title .line{
+  width: 100px;
+  height: 2px;
+  border: 10px;
+  background: #844747;
+  margin: auto;
+} 
+
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 20px 80px;
+}
+
+.container .card{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+   margin: 30px 10px;
+   padding: 20px 15px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0 3px 25px rgba(0, 0, 0, 0.3);
+   transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+  height: 350px;
+}
+ 
+.container .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img{
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.container .card .content h2 a{
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background-color:#b7cad7 ;
+  color: black;
+  padding: 35px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+
+.footer-about h3 {
+  font-size: 20px;
+  color: black;
+}
+
+.footer-about .kolom {
+  font-size: 16px;
+  color: black;
+  width: 200px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: black;
+}
+
+
+.footer-social a {
+  margin: 8px 5px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}

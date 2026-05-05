@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ddeff0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === NAVBAR === */
+nav {
+  background-color: rgba(179, 200, 210, 0.872);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed; 
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 20px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* NAV LIST di tengah */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  color: #191919;
+  font-weight: 600;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-list li a:hover:after {
+  width: 100%;
+}
+
+/* Tombol signup kanan */
+.btn-signup {
+  text-decoration: none;
+  background-color: #003B42;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background-color: #0f4f4f;
+}
+
+.hero {
+  background-image: url('./img/jakob-owens-WnldIj7fdJo-unsplash\ \(1\).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.container{
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  padding: 50px 60px;
+  padding-bottom: 28%;
+  position: relative;
+  left: -300px;
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+  color: white;
+  box-shadow: 0 4px 20px (0, 0, 0, 0.6);
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px; 
+  padding: 12px 20px;
+  background: transparent;
+  outline: none;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 800px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.hero h1{
+  font-size: 2.5rem;
+  font-weight: 800px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.hero p {
+  font-style: Arial,sans-serifS;
+  color: #f1f1f1;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.btn-getstarted {
+  display: flex;
+  text-align: center; 
+  justify-content: center;
+  text-decoration: none;
+  background-color: #003B42;
+  color: #f1f1f1;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.section-title  h1{
+  font-size: 50px;
+  color: #040404;
+  text-align: center;
+}
+
+.section-title .line{
+  width: 100px;
+  height: 2px;
+  border: 10px;
+  background: rgb(33, 31, 31);
+  margin: auto;
+} 
+
+img{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.wrapper {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.intro {
+  flex: 1;
+}
+
+.intro h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.section-title  h1{
+  color: #191919;
+  font-size: 50px;
+  color: #191919;
+  text-align: center;
+}
+
+.section-title .line{
+  width: 100px;
+  height: 2px;
+  border: 10px;
+  background: #844747;
+  margin: auto;
+} 
+
+.container-card{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    background: #f1f1f1;
+    width: 270px ;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transfrom 0.3 ease;
+}
+
+.card-image {
+  height: 170px;
+  margin-bottom: 17px;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.car-1 {
+  background-image: url('./img/pencemaran lingkungan.jpg');
+}
+
+.car-2 {
+  background-image: url('./produk/rak susun1.jpg');
+}
+
+.car-3 {
+  background-image: url('./produk/botol dari bunga.jpg');
+}
+
+.car-4 {
+  background-image: url('./produk/sandal.jpg');
+}
+
+.car-5 {
+  background-image: url('./produk/lampu hias.jpg');
+}
+
+.car-6 {
+  background-image: url('./mapel umum/b.indo.jpg');
+}
+
+.car-7 {
+  background-image: url('./mapel umum/bahasa inggris.png');
+}
+
+.car-8 {
+  background-image: url('./mapel umum/matematika.png');
+}
+
+.car-9{
+  background-image: url('./img/1fdc0f893412ce55f0d2811821b84d3b-302.jpg');
+}
+.card h3 {
+  padding: 5px;
+  text-align: center;
+}
+ 
+.card p {
+  padding: 10px;
+  margin-bottom: 15%;
+  text-align: justify;
+}
+
+.card a {
+  text-decoration: none;
+   background-color: rgb(3, 52, 37);
+   color: #f1f1f1;
+   font-weight: bold;
+   padding: 15px 20px;
+   display: block;
+   border-radius: 40px;
+   text-align: center;
+   margin: 20px 50px;
+} 
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+section-title  h1{
+  font-size: 50px;
+  color: #1b0b0b;
+  text-align: center;
+}
+
+.section-title .line{
+  width: 100px;
+  height: 2px;
+  border: 10px;
+  background: black;
+  margin: auto;
+} 
+
+.wrapper {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.intro {
+  flex: 1;
+}
+
+.team{
+  display: flex;
+  text-align: center;
+  width: auto;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.team .team_member{
+  background: #b6b9c3;
+  border-radius: 10px;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3 ease;
+}
+
+.team .team_member:hover{
+  transform: scale(1.05);
+}
+
+ .team .team_member h3 a{
+  color: black;
+  font-size: 26px;
+  position: relative;
+  text-decoration: none;
+  top: 10px;
+
+ }
+
+ .team .team_member p.role{
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 12px 0;
+ }
+
+ .team .team_member p{
+  color: black;
+  text-align: justify;
+ }
+
+ .team .team_member .team_img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:#b6b9c3;
+ }
+
+ .team .team_member .team_img img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 50%;
+ } 
+
+.footer {
+  background-color:#b7cad7 ;
+  color: black;
+  padding: 35px 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px;
+}
+
+
+.footer-about h3 {
+  font-size: 20px;
+  color: black;
+}
+
+.footer-about .kolom {
+  font-size: 16px;
+  color: black;
+  width: 200px;
+  line-height: 1.6;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: black;
+}
+
+.footer-social a {
+  margin: 8px 5px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+}
